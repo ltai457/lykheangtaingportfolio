@@ -3,7 +3,7 @@
       <div class="profile">
         <div class="profile-section">
           <img src="@/assets/logo.png" alt="Your Profile Picture">
-          <h2>Lykheang Taing</h2>
+          <h1>Lykheang Taing</h1>
           <p class="title">Master of IT Student</p>
         </div>
       </div>
@@ -18,7 +18,7 @@
         <ul>
           <li v-for="item in education" :key="item.id">
             <p>{{ item.degree }} at {{ item.Institution }} ({{ item.year }})</p>
-            <button @click="toggleCourses(item.id)">Show Detail</button>
+            <button @click="toggleCourses(item.id)">Show Course</button>
             <transition>
                 <ul v-if="item.showCourses">
                     <li v-for="(course, index) in item.courses" :key="`course-${index}`">{{ course }}</li>
@@ -187,6 +187,22 @@ p {
 .v-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .profile-section img {
+    width: 120px; /* Smaller profile image on smaller screens */
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller heading on smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller paragraph text on smaller screens */
+  }
+}
+
 </style>
 
   

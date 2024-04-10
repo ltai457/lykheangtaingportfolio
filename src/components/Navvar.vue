@@ -7,6 +7,7 @@
           <router-link to="/about-me" class="nav-link">About Me</router-link>
           <router-link to="/projects" class="nav-link">Projects</router-link>
           <router-link to="/skills" class="nav-link">Skills</router-link>
+          <router-link to = "contact-me" class = "nav-link">Contact</router-link>
           <!-- Add more links as needed -->
         </div>
       </div>

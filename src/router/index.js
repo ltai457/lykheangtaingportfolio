@@ -4,6 +4,8 @@ import Home from '../components/Home.vue';
 import AboutMe from '../components/AboutMe.vue';
 import Project from '../components/Projects.vue';
 import Skills from '../components/Skills.vue';
+import ContactMe from '../components/ContactMe.vue';
+
 
 
 
@@ -30,6 +32,12 @@ const router = createRouter({
       name: 'Skills',
       component: Skills,
     },
+    {
+        path: '/contact-me',
+        name: 'ContactMe',
+        component: ContactMe,
+      },
+    
     // You can add more routes here
   ],
 });

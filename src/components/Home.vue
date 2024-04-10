@@ -6,7 +6,7 @@
             <img src="@/assets/github-mark.png" alt="GitHub Logo" class = "logo">
             </a>
             <a v-bind:href="instagramLink" target="_blank">
-            <img src="@/assets/logolinkedin.png" alt="Linkedin Logo" class = "logo">
+            <img src="@/assets/LinkedinIcon.png" alt="Linkedin Logo" class = "logo">
             </a>
         </header>
 
